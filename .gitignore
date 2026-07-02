@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/recaps.json
+data/images/*.png
+!data/images/.gitkeep
+npm-debug.log*
+.DS_Store

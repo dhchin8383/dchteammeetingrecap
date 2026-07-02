@@ -1,0 +1,20 @@
+{
+  "name": "dch-team-meeting-recap",
+  "version": "1.0.0",
+  "description": "Internal tool: paste a Bubbles meeting transcript, get an auto-generated summary + infographic posted to Slack, plus a self-updating recap archive page to embed on dchhub.com.",
+  "private": true,
+  "type": "commonjs",
+  "main": "server.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "playwright install chromium"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "playwright": "^1.47.0"
+  }
+}

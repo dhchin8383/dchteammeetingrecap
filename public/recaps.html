@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Team Meeting Recaps</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  main.archive { max-width: 860px; }
+  .recap-card { background: #fff; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; margin-bottom: 24px; display: flex; }
+  .recap-card img { width: 220px; object-fit: cover; object-position: top; flex: none; }
+  .recap-card .body { padding: 20px 24px; flex: 1; }
+  .recap-card .date { color: var(--red); font-weight: 700; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .recap-card h3 { margin: 0 0 8px; font-size: 20px; }
+  .recap-card p { color: var(--muted); font-size: 14px; line-height: 1.5; white-space: pre-line; }
+  .recap-card .links { margin-top: 12px; font-size: 14px; }
+  .recap-card .links a { color: var(--red); font-weight: 700; text-decoration: none; margin-right: 18px; }
+  .recap-card .links a:hover { text-decoration: underline; }
+  .empty { color: var(--muted); padding: 40px 0; text-align: center; }
+  @media (max-width: 600px) {
+    .recap-card { flex-direction: column; }
+    .recap-card img { width: 100%; height: 160px; }
+  }
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">DAN CHIN HOMES</div>
+  <nav><a href="index.html">Post a Recap</a></nav>
+</header>
+<main class="archive">
+  <h1>Meeting Recaps</h1>
+  <p class="subtitle">Every team meeting summary, infographic, and recording in one place.</p>
+  <div id="list"></div>
+</main>
+<script src="recaps.js"></script>
+</body>
+</html>

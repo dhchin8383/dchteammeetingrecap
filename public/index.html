@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Team Meeting Recap Poster</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">DAN CHIN HOMES</div>
+  <nav><a href="recaps.html">Recap Archive</a></nav>
+</header>
+<main>
+  <h1>Post This Week's Team Meeting Recap</h1>
+  <p class="subtitle">Paste the meeting transcript from Bubbles below. This generates a summary and infographic and posts them straight to #dchlounge.</p>
+
+  <form id="recap-form">
+    <div class="row">
+      <div class="field">
+        <label for="meetingTitle">Meeting Title (optional)</label>
+        <input id="meetingTitle" name="meetingTitle" type="text" placeholder="Team Meeting Recap" />
+      </div>
+      <div class="field">
+        <label for="meetingDate">Meeting Date</label>
+        <input id="meetingDate" name="meetingDate" type="date" />
+      </div>
+    </div>
+
+    <div class="field">
+      <label for="recordingUrl">Bubbles Recording URL</label>
+      <input id="recordingUrl" name="recordingUrl" type="url" placeholder="https://usebubbles.com/..." />
+      <div class="hint">Bubbles doesn't expose the transcript via this link alone — paste the transcript text below too.</div>
+    </div>
+
+    <div class="field">
+      <label for="transcript">Meeting Transcript</label>
+      <textarea id="transcript" name="transcript" placeholder="Paste the full transcript text from Bubbles here..." required></textarea>
+    </div>
+
+    <button type="submit" class="submit" id="submit-btn">Generate &amp; Post to Slack</button>
+    <div id="status"></div>
+  </form>
+
+  <div id="result">
+    <img id="result-img" src="" alt="Generated infographic" />
+    <div class="result-body">
+      <p id="result-summary"></p>
+      <p><a id="result-slack-link" href="#" target="_blank" rel="noopener">View in Slack &rarr;</a></p>
+    </div>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
